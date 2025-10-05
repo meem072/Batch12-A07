@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS — Ticket System</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./script.js">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CS — Ticket System</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="new-ticket">+ New Ticket</button>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <!-- Status Cards -->
+  <section class="status-section">
+    <div class="status-card purple">
+      <h3>In-Progress</h3>
+      <p id="inProgressCount">0</p>
+    </div>
+    <div class="status-card green">
+      <h3>Resolved</h3>
+      <p id="resolvedCount">0</p>
+    </div>
+  </section>
+   
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="tickets">
+      <h2>Customer Tickets</h2>
+      <div class="ticket-list">
+        
+        <!-- Ticket 01 -->
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <h3>Login Issues - Can't Access Account</h3>
+            <span class="status open">Open</span>
+          </div>
+          <p>Customer is unable to log in to their account. They've tried resetting their password multiple times but still...</p>
+          <div class="ticket-footer">
+            <span>#1001</span>
+            <span class="priority high">HIGH PRIORITY</span>
+            <span>John Smith</span>
+            <span>1/15/2024</span>
+          </div>
+        </div>
+        <!-- Ticket 02 -->
+         <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Unable to Download Invoice</h3>
+        <span class="status progress">In-Progress</span>
+      </div>
+      <p>Customer cannot download their January invoice from the billing section. The download button is...</p>
+      <div class="ticket-footer">
+        <span>#1003</span>
+        <span class="priority medium">MEDIUM PRIORITY</span>
+        <span>Michael Brown</span>
+        <span>1/17/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 03 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Incorrect Billing Address</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Customer's billing address shows a different city. They updated it but it still displays the old one.</p>
+      <div class="ticket-footer">
+        <span>#1004</span>
+        <span class="priority low">LOW PRIORITY</span>
+        <span>Emily Davis</span>
+        <span>1/18/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 04 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>App Crash on Launch</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Customer reports that the mobile app crashes immediately upon opening on Android 13.</p>
+      <div class="ticket-footer">
+        <span>#1005</span>
+        <span class="priority high">HIGH PRIORITY</span>
+        <span>David Wilson</span>
+        <span>1/19/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 05 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Refund Not Processed</h3>
+        <span class="status progress">In-Progress</span>
+      </div>
+      <p>Customer requested a refund two weeks ago but has not received the amount yet.</p>
+      <div class="ticket-footer">
+        <span>#1006</span>
+        <span class="priority medium">MEDIUM PRIORITY</span>
+        <span>Sophia Taylor</span>
+        <span>1/20/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 6 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Two-Factor Authentication Issue</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Customer is not receiving 2FA codes on their registered phone number.</p>
+      <div class="ticket-footer">
+        <span>#1007</span>
+        <span class="priority high">HIGH PRIORITY</span>
+        <span>James Anderson</span>
+        <span>1/21/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 7 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Unable to Update Profile Picture</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Customer tries to upload a new profile picture but gets 'Upload failed' error.</p>
+      <div class="ticket-footer">
+        <span>#1008</span>
+        <span class="priority low">LOW PRIORITY</span>
+        <span>Olivia Martinez</span>
+        <span>1/22/2024</span>
+      </div>
+    </div>
+
+    <!-- Ticket 8 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Subscription Auto-Renewal</h3>
+        <span class="status progress">In-Progress</span>
+      </div>
+      <p>Customer wants to enable auto-renewal for their subscription but the toggle is disabled.</p>
+      <div class="ticket-footer">
+        <span>#1009</span>
+        <span class="priority medium">MEDIUM PRIORITY</span>
+        <span>Liam Thomas</span>
+        <span>1/17/2024</span>
+      </div>
+    </div>
+    <!-- Ticket 9 -->
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Missing Order Confirmation Email</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Customer placed an order but didn’t receive a confirmation email even though payment succeeded.</p>
+      <div class="ticket-footer">
+        <span>#1010</span>
+        <span class="priority medium">MEDIUM PRIORITY</span>
+        <span>Isabella Garcia</span>
+        <span>1/24/2024</span>
+      </div>
+    </div>
+
+
+        <div class="ticket-card">
+          <div class="ticket-header">
+            <h3>Unable to Download Invoice</h3>
+            <span class="status progress">In-Progress</span>
+          </div>
+          <p>Customer cannot download their January invoice from the billing section. The download button is...</p>
+          <div class="ticket-footer">
+            <span>#1003</span>
+            <span class="priority medium">MEDIUM PRIORITY</span>
+            <span>Michael Brown</span>
+            <span>1/17/2024</span>
+          </div>
+        </div>
+
+        <!-- Add more tickets as needed -->
+
+      </div>
+    </section>
+
+    <!-- Task Status -->
+    <aside class="task-status">
+      <h2>Task Status</h2>
+      <p>Select a ticket to add to Task Status</p>
+      <h3>Resolved Task</h3>
+      <p>No resolved tasks yet.</p>
+    </aside>
+  </main>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-col about">
+      <h3>CS — Ticket System</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">Contact Sales</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Products & Services</a></li>
+        <li><a href="#">Customer Stories</a></li>
+        <li><a href="#">Download Apps</a></li>
+      </ul>
+    </div>
+
+    <!-- Information -->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Join Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h4>Social Links</h4>
+      <ul class="social-links">
+        <li><a href="#"><span>🌐</span> @CS — Ticket System</a></li>
+        <li><a href="#"><span>💼</span> @CS — Ticket System</a></li>
+        <li><a href="#"><span>📘</span> @CS — Ticket System</a></li>
+        <li><a href="#"><span>✉️</span> support@cst.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CS — Ticket System. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
